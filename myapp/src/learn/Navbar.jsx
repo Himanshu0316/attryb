@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className={dis ? styles.Navdiv : styles.blackDiv}>
         <nav>
         <ul className={styles.Ulnav}>
-        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/">Add Cars</NavLink></li>
-        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/">Inventory</NavLink></li>
-        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/">Login</NavLink></li>
+        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/addcar">Add Cars</NavLink></li>
+        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/inventory">Inventory</NavLink></li>
+        <li className={styles.Linav}><NavLink className={styles.Linknav} to="/login">Login</NavLink></li>
         </ul>
         </nav>
       </div>
