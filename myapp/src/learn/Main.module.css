@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0.5);
+}
+.Navbar{
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid red;
+    background-color: black;
+    color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);  
+}
+.Menu{
+    display: none;
+    padding-left: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Logo{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: yellowgreen;
+}
+.Navdiv{
+    display: block;
+    border-radius: 10px;
+}
+
+.blackDiv{
+    display: block;
+    background-color: black;
+   
+}
+.Ulnav{
+    list-style: none;
+    border-radius: 10px;
+    right: 5px;
+}
+.Linav{
+    position: relative;
+    float: left;
+    border-radius: 10px;
+}
+.Linknav{
+    margin: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: yellowgreen;
+    display: block;
+    box-shadow: inset 0px 5px 10px 0px rgba(0,255,255,0.7);
+}
+.Linknav:hover{
+    color: white;
+   
+    background-color: black;
+    transform: translateY(2px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0,255,255,0.7);
+
+}
+.Home{
+    margin-top: 70px;
+    width: 100%;
+    color: white;
+}
+.H1tag{
+    text-align: center;
+    padding-top: 20px;
+    font-style: oblique;
+    text-decoration:wavy;
+}
+.HomeBox{
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.FilterBox{
+    width: 20%;
+    border: 1px solid white;
+}
+.GridBox{
+    width: 70%;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+ @media (max-width:700px){
+    .Menu{
+        display: inline;
+        padding-left: 5px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Navdiv{
+        display: none;
+        position: absolute;
+        top:100%; left:0; right: 0;
+        
+    }
+    .blackDiv{
+        display: block;
+        background-color: black;
+        position: absolute;
+            top:100%; left:0; right: 0;
+       
+    }
+    .Linav{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+ }
