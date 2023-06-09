@@ -29,7 +29,7 @@ const Login = () => {
   const handleSubmit = async(e)=>{
      e.preventDefault();
      try{
-      const url = "http://localhost:8080/dealer/login";
+      const url = "https://attrybbackend.vercel.app/dealer/login";
       const res = await axios.post(url,data);
       console.log(res.data.msg)
       var token = res.data.token;

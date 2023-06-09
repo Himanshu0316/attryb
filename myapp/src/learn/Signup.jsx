@@ -31,7 +31,7 @@ const Signup = () => {
     console.log("hii")
     e.preventDefault();
     try {
-      const url = "http://localhost:8080/dealer/register";
+      const url = "https://attrybbackend.vercel.app/dealer/register";
       const res = await axios.post(url, data);
       navigate("/login")
      // window.location.href = "/login"
